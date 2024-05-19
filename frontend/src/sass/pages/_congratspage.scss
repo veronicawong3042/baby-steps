@@ -1,0 +1,28 @@
+.congrats-page {
+    position: fixed; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+  }
+  
+  .congrats-page h1 {
+    text-align: center;
+  }
+  
+  .congrats-page blockquote {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .congrats-page a {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+  }
+  

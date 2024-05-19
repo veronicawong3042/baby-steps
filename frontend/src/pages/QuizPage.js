@@ -10,7 +10,7 @@ function QuizPage() {
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
-    setShowErrorMessage(selectedValue !== "3"); // Show error message if not the correct answer
+    setShowErrorMessage(selectedValue !== "3"); 
   };
 
   return (
@@ -82,7 +82,7 @@ function QuizPage() {
       {selectedOption === "3" && (
         <div className="next-page-btn correct-message">
           <p><em>Well Done!</em></p>
-          <NavLink to={`/`}>
+          <NavLink to={`/congrats`}>
             <FaArrowRight />
           </NavLink>
         </div>
