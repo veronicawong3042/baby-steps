@@ -20,6 +20,7 @@
   width: fit-content;
   height: fit-content;
   border-radius: 50%;
+  background-color: white;
 }
 
 .lesson-popup {
@@ -100,6 +101,7 @@
   width: fit-content;
   height: fit-content;
   border-radius: 50%;
+  background-color: white;
 }
 
 .lesson-popup {
@@ -127,6 +129,7 @@
   align-items: center;
   padding: 0 1.5rem;
   border-bottom: solid black 0.1rem;
+  background-color: #BE95C4;
 }
 .homepage .chapter-banner .change-chapter-btn {
   margin-left: 0.5rem;
@@ -262,7 +265,7 @@ body {
   fill: black;
   height: 2rem;
   width: 2rem;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
   position: absolute;
   right: 0;
   top: 0;
