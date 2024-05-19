@@ -2,25 +2,26 @@ import { PiNotebookFill } from "react-icons/pi";
 import { HiOutlineInformationCircle } from "react-icons/hi2";
 import LessonComponent from "../components/LessonComponent";
 import LessonPopUp from "../components/LessonPopUp";
+import { NavLink } from "react-router-dom";
 
 function HomePage() {
   return (
     <div className="homepage">
       <div className="chapter-banner">
         <h2>Chapter 1: Preconception & Planning</h2>
-        <button className="change-chapter-btn">
+        <NavLink to={`/chapter-navigation`} className="change-chapter-btn">
           <PiNotebookFill />
-        </button>
+        </NavLink>
       </div>
 
       {/* to be cloned/reused: */}
-      <LessonComponent lessonTitle="Lesson 1" />
+      <LessonComponent lessonTitle="Lesson 1 - Menstrual Cycle and Ovulation" />
       <LessonComponent lessonTitle="Lesson 2" />
       <LessonComponent lessonTitle="Lesson 3" />
 
-      <button className="glossary-btn">
+      <NavLink to={`/glossary`} className="glossary-btn" >
         <HiOutlineInformationCircle />
-      </button>
+      </NavLink>
     </div>
   );
 }
