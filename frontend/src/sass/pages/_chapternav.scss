@@ -1,3 +1,5 @@
+@import "../variables";
+
 .chapter-nav-page {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -18,9 +20,4 @@
         padding-top: 3rem;
         max-width: 100%; /* Limit maximum width to prevent horizontal scrolling */
     }
-
-    .even {
-        background-color: $primary-color;
-    }
-
 }

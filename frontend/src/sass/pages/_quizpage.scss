@@ -1,24 +1,80 @@
+// @use '../variables';
+
 .quiz-page {
-    .close-button svg {
-        fill: black;
-        height: 2rem;
-        width: 2rem;
-        margin: 0.5rem;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+  margin: 1.5rem auto;
+  padding: 1.5rem;
 
-    h2, blockquote, input, button {
-        margin: 1rem 1.5rem;
-    }
+  h2,
+  blockquote,
+  input,
+  button {
+    margin: 1rem 1.5rem;
+  }
 
-    h2 {
-        font-size: 20px;
-    }
+  blockquote {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    blockquote, label {
-        font-size: 14px;
-    }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
 
+  label {
+    font-size: 14px;
+  }
+
+  .option {
+    margin: 1rem;
+    background-color: #eee5f0;
+    border-radius: 1rem;
+    // padding: 0.5rem;
+  }
+
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .option {
+      margin: 0.5rem 0;
+
+      .option-label {
+        display: block;
+        padding: 1.5rem;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+        width: 200px;
+      }
+
+      input[type="radio"]:checked + .option-label {
+        background-color: rgba(232, 127, 127, 0.5);
+      }
+
+      input#option-3[type="radio"]:checked + .option-label {
+        background-color: rgb(
+          127,
+          232,
+          127,
+          0.5
+        );
+      }
+    }
+  }
+  .correct-message {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p {
+      margin-right: 1rem;
+    }
+  }
+
+  .error-message{
+    text-align: center;
+  }
 }

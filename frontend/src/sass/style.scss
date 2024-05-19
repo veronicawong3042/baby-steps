@@ -14,7 +14,7 @@ body{
     fill: black;
     height: 2rem;
     width: 2rem;
-    margin: 0.5rem;
+    margin: 1rem .5rem .5rem 0.5rem;
     position: absolute;
     right: 0;
     top: 0;
@@ -31,15 +31,16 @@ body{
   
   .next-page-btn a {
     display: inline-block;
-    background-color: #5E548E;
+    background-color: $dark-purple;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
+    margin-top: auto;
   }
   
   .next-page-btn a:hover {
-    background-color: #4b0082;
+    background-color: $dark-purple;
   }
   

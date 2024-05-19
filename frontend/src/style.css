@@ -1,14 +1,67 @@
+.lesson-component {
+  width: fit-content;
+  margin: 5.5rem 0;
+}
+.lesson-component svg {
+  margin: 0.5rem;
+}
+.lesson-component .icon-outer-circle {
+  border: solid #BE95C4 0.2rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  padding: 0.4rem;
+  box-shadow: 0 0 0.5rem 0.5rem #BCD3FA;
+  position: relative;
+  z-index: 0;
+  animation: pulse 1.2s infinite alternate;
+}
+.lesson-component .icon-outer-circle .icon-inner-circle {
+  border: solid black 0.2rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  background-color: white;
+}
+.lesson-component:nth-child(even) {
+  margin-left: auto;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  100% {
+    transform: scale(1.1); /* Slightly larger size */
+  }
+}
 .lesson-popup {
   border: solid black 0.08rem;
-  margin: 0.2rem;
+  border-radius: 0.5rem;
+  margin: 0.8rem 0;
   width: 12rem;
-  padding: 0.4rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lesson-popup a {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: solid black 0.08rem;
+  border-radius: 0.5rem;
+  background-color: #BE95C4;
 }
 
 .glossary-page h1 {
   text-align: center;
   font-size: 1.5rem;
-  background-color: #C2AFFC;
+  background-color: #BE95C4;
   margin: 0;
   padding: 1rem;
   margin-left: 0;
@@ -45,38 +98,111 @@
   padding-left: 1rem;
 }
 .glossary-page .chapter-two {
-  background: rgba(194, 175, 252, 0.3294117647);
-  padding-top: 1rem;
+  background: #BE95C4;
+  padding-top: 0.5rem;
   padding-bottom: 1rem;
+  margin: 1.5rem auto 1rem auto;
+}
+
+.lesson-component {
+  width: fit-content;
+  margin: 5.5rem 0;
+}
+.lesson-component svg {
+  margin: 0.5rem;
+}
+.lesson-component .icon-outer-circle {
+  border: solid #BE95C4 0.2rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  padding: 0.4rem;
+  box-shadow: 0 0 0.5rem 0.5rem #BCD3FA;
+  position: relative;
+  z-index: 0;
+  animation: pulse 1.2s infinite alternate;
+}
+.lesson-component .icon-outer-circle .icon-inner-circle {
+  border: solid black 0.2rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  background-color: white;
+}
+.lesson-component:nth-child(even) {
+  margin-left: auto;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  100% {
+    transform: scale(1.1); /* Slightly larger size */
+  }
+}
+.lesson-popup {
+  border: solid black 0.08rem;
+  border-radius: 0.5rem;
+  margin: 0.8rem 0;
+  width: 12rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lesson-popup a {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: solid black 0.08rem;
+  border-radius: 0.5rem;
+  background-color: #BE95C4;
 }
 
 .homepage {
-  margin: auto 1rem;
+  margin: auto;
 }
 .homepage svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.2rem;
 }
 .homepage .chapter-banner {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0.3rem 1.5rem;
+  border-bottom: solid black 0.1rem;
+  background-color: #BE95C4;
 }
-.homepage .lesson-component {
-  width: 100%;
+.homepage .chapter-banner .change-chapter-btn {
+  margin-left: 0.5rem;
+  padding: 0.5rem 0.3rem 0.3rem;
+  border-radius: 0.5rem;
+  background-color: #BCD3FA;
+  box-shadow: 0 0 0.2rem 0.2rem #BCD3FA;
 }
-.homepage .lesson-component:nth-child(even) {
-  margin-left: auto;
-}
-.homepage .lesson-component svg {
-  margin: 1.5rem;
+.homepage .chapter-lessons {
+  margin: auto 3rem;
+  max-width: 100vw;
 }
 .homepage .glossary-btn {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 1.5rem;
+}
+.homepage .glossary-btn svg {
+  background-color: #BCD3FA;
+  border-radius: 50%;
+  box-shadow: 0 0 0.2rem 0.2rem #BCD3FA;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .chapter-nav-page {
@@ -98,31 +224,100 @@
   padding-top: 3rem;
   max-width: 100%; /* Limit maximum width to prevent horizontal scrolling */
 }
-.chapter-nav-page .even {
-  background-color: #BE95C4;
-}
 
-.quiz-page .close-button svg {
-  fill: black;
-  height: 2rem;
-  width: 2rem;
-  margin: 0.5rem;
-  position: absolute;
-  right: 0;
-  top: 0;
+.quiz-page {
+  margin: 1.5rem auto;
+  padding: 1.5rem;
 }
-.quiz-page h2, .quiz-page blockquote, .quiz-page input, .quiz-page button {
+.quiz-page h2,
+.quiz-page blockquote,
+.quiz-page input,
+.quiz-page button {
   margin: 1rem 1.5rem;
+}
+.quiz-page blockquote {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
 }
 .quiz-page h2 {
   font-size: 20px;
+  text-align: center;
 }
-.quiz-page blockquote, .quiz-page label {
+.quiz-page label {
   font-size: 14px;
+}
+.quiz-page .option {
+  margin: 1rem;
+  background-color: #eee5f0;
+  border-radius: 1rem;
+}
+.quiz-page .options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quiz-page .options-container .option {
+  margin: 0.5rem 0;
+}
+.quiz-page .options-container .option .option-label {
+  display: block;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  width: 200px;
+}
+.quiz-page .options-container .option input[type=radio]:checked + .option-label {
+  background-color: rgba(232, 127, 127, 0.5);
+}
+.quiz-page .options-container .option input#option-3[type=radio]:checked + .option-label {
+  background-color: rgba(127, 232, 127, 0.5);
+}
+.quiz-page .correct-message {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.quiz-page .correct-message p {
+  margin-right: 1rem;
+}
+.quiz-page .error-message {
+  text-align: center;
+}
+
+.congrats-page {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.congrats-page h1 {
+  text-align: center;
+}
+
+.congrats-page blockquote {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.congrats-page a {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
 }
 
 .education-page {
-  padding: 20px;
+  margin: 1rem auto;
+  padding: 1.5rem;
 }
 .education-page h2 {
   font-size: 24px;
@@ -131,8 +326,9 @@
   text-align: center;
 }
 .education-page .learningObjective {
-  margin: auto;
+  margin: 2.5rem auto 1.5rem;
   align-content: center;
+  border-radius: 0.3rem;
   width: 10rem;
   height: 1rem;
   background-color: #BE95C4;
@@ -141,6 +337,11 @@
 }
 .education-page .learningObjective p {
   font-weight: 600;
+}
+.education-page .next-page-btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem auto 2rem;
 }
 
 body, p, a {
@@ -157,7 +358,7 @@ body {
   fill: black;
   height: 2rem;
   width: 2rem;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
   position: absolute;
   right: 0;
   top: 0;
@@ -180,10 +381,11 @@ body {
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
+  margin-top: auto;
 }
 
 .next-page-btn a:hover {
-  background-color: #4b0082;
+  background-color: #5E548E;
 }
 
 /*# sourceMappingURL=style.css.map */
