@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import LessonPopUp from "../components/LessonPopUp";
 
-
 function LessonComponent({ lessonTitle }) {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -11,7 +10,7 @@ function LessonComponent({ lessonTitle }) {
 
   return (
     <div className='lesson-component' onClick={handleLessonClick}>
-      <h3>{lessonTitle}</h3>
+      {lessonTitle}
       {showPopup && <LessonPopUp lessonTitle={lessonTitle} />}
     </div>
   );

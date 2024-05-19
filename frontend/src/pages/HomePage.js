@@ -3,6 +3,8 @@ import { HiOutlineInformationCircle } from "react-icons/hi2";
 import LessonComponent from "../components/LessonComponent";
 import LessonPopUp from "../components/LessonPopUp";
 import { NavLink } from "react-router-dom";
+import { RiCheckLine } from "react-icons/ri";
+import { FaStar } from "react-icons/fa";
 
 function HomePage() {
   return (
