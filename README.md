@@ -8,7 +8,7 @@ During pregnancy, expectant mothers often face a flood of information from vario
 Baby Steps allows expectant mothers to learn more about any given topic relating to pregnancy and childbirth. Users are able to test their pre-existing knowledge as well as read informative, easily digestible pieces of information with our lesson plans. To navigate through the app, users can also utilize the glossary section to quickly skim through all potential topics that Baby Steps offers.
 
 ## How we built it
-We built Baby Steps using Figma, React.js, React libraries and custom API hooks, SQLite, Node.js, Express.js, Cors, SASS, and JSON.
+We built Baby Steps using Figma, React.js, React libraries and custom API hooks, SQLite, Node.js, Express.js, Cors, Defang, SASS, and JSON.
 
 ## Challenges we ran into
 We had difficulty setting up the database which led to troubles when getting the content to display on the front-end.
@@ -19,7 +19,7 @@ We are all juniors in coding with three of us only within our first year of lear
 The back-ends are proud of the seamless integration between the front-end and back-end especially because of the struggles we had with it. We're proud of the scalability brought on by using SQLite. For front-end, we're proud of the Figma design and favicon.
 
 ## What we learned
-We learned how to create a dynamic custom hook, gained a stronger understanding of react router dom, as well as implementing the basics of SQL in conjunction with Express.js.
+We learned how to create a dynamic custom hook, gained a stronger understanding of react router dom, as well as implementing the basics of SQL in conjunction with Express.js. We also deployed our app with Defang.
 
 ## What's next for Baby Steps
 In the future, we would like to add a mascot, and later adapt it into an AI assistant for users to ask questions outside the curriculum for quick access/response via chatbot. Additionally, expanding and further developing the quiz format to offer more variety in question types. Adding a page for user accounts would also be nice for the future. Users may use this profile to track their pregnancy as well through self-report.
