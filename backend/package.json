@@ -1,10 +1,15 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "node": "^22.2.0",
     "sqlite3": "^5.1.7"
   },
   "scripts": {
+    "dev": "nodemon server.js",
     "start": "node server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
