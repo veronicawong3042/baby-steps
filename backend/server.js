@@ -32,9 +32,9 @@ app.get('/questions', (req, res) => {
         }
     });
 });
-// database.run('INSERT INTO questions (question, answer, other1, other2, other3) VALUES ("The fertile window is __ before ovulation?", "5 days", "3 days", "6 days", "1 week")');
-// database.run('INSERT INTO questions (question, answer, other1, other2, other3) VALUES ("What is the typical timing of ovulation during a 28-day menstrual cycle?", "14 days", "7 days", "16 days", "28 days")');
-
+database.run('INSERT INTO questions (question, answer, other1, other2, other3) VALUES ("The fertile window is __ before ovulation?", "5 days", "3 days", "6 days", "1 week")');
+database.run('INSERT INTO questions (question, answer, other1, other2, other3) VALUES ("What is the typical timing of ovulation during a 28-day menstrual cycle?", "14 days", "7 days", "16 days", "28 days")');
+database.run('INSERT INTO questions (question, answer, other1, other2, other3) VALUES ("Which is a method that can be used to track ovulation?", "Basal body temperature", "Daily exercise", "Eating a balanced diet", "Drinking plenty of water")');
 
 
 app.listen(port, () => {
