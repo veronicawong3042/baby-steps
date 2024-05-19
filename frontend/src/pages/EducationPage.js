@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import { IoCloseSharp } from "react-icons/io5";
 
 function EducationPage() {
   return (
     <div className="education-page">
       <h2>Lesson 1: Menstrual Cycle and Ovulation</h2>
-
+      <NavLink to={`/`} className="close-button">
+        <IoCloseSharp />
+      </NavLink>
       <strong>
         <p>Learning Objective</p>
       </strong>
