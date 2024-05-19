@@ -32,6 +32,8 @@ function GlossaryPage() {
           <p>Discussion of common fertility problems and potential treatments or interventions to improve fertility.</p>
         </a>
       </div>
+
+      <div className="chapter-two">
       <h2>Chapter 2 - Early Pregnancy</h2>
       <div className="glossary-lesson-button">
         <a href="#">
@@ -67,6 +69,7 @@ function GlossaryPage() {
           <h4>Common discomforts and how to manage them</h4>
           <p>Understanding these common discomforts and learning how to manage them can help expectant mothers maintain their well-being throughout pregnancy.</p>
         </a>
+      </div>
       </div>
       <h2>Chapter 3 - Second Trimester</h2>
       <div className="glossary-lesson-button">
