@@ -5,10 +5,10 @@ function QuizPage() {
   return (
     <div className="quiz-page">
       <div className="question-header">
-        <h2>Question 1</h2>
         <NavLink to={`/`} className="close-button">
           <IoCloseSharp />
         </NavLink>
+        <h2>Question 1</h2>
       </div>
       <div className="quiz-content">
         {/* Blockquote is the question */}
