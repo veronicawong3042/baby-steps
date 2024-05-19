@@ -9,7 +9,7 @@ function start() {
     const database = new sqlite3.Database("./db/database.sqlite");
 
     //create table for api
-    database.run("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, question TEXT, answer TEXT, score INTEGER)");
+    database.run("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, question TEXT, answer TEXT)");
 
     //get is getting whatever data that already exists
     app.get('/questions', (req, res) => {
@@ -25,8 +25,9 @@ function start() {
     });
 
     app.post('/questions', (req, res) => {
-        database.run('INSERT INTO questions (question, answer, score) VALUES ("What is life", "forty-two", 30)');
-        res.send("okay");
+        database.run('INSERT INTO questions (question, answer) VALUES ("Which of the following statements about ovulation and fertility tracking is correct?", "Tracking ovulation methods include basal body temperature charting, ovulation predictor kits, and monitoring cervical mucus changes.")');
+        database.run('INSERT INTO questions (question, answer) VALUES ("What are the initial signs and symptoms of pregnancy?", "Early signs and symptoms of pregnancy may include missed periods, breast tenderness, nausea (morning sickness), fatigue, frequent urination, and heightened sense of smell.")');
+        res.send("successfully added questions!");
     })
 
     app.listen(port, () => {
