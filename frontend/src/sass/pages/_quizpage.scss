@@ -52,7 +52,6 @@
       }
 
       input[type="radio"]:checked + .option-label {
-        background-color: rgba(232, 127, 127, 0.5);
       }
 
       input#option-3[type="radio"]:checked + .option-label {
@@ -78,8 +77,8 @@
     text-align: center;
   }
   
-  .correct-answer {
-    background-color: $green;
-  }
+
+
+
   
 }

@@ -44,7 +44,8 @@ function QuizPage() {
               onChange={handleOptionChange}
               style={{ display: "none" }}
             />
-            <label htmlFor={"option-" + index + 1} className="option-label">
+            <label htmlFor={"option-" + index + 1} 
+            className={"option-label " + (answer === currentQuestionAnswer ? 'correctAnswer' : 'wrongAnswer')}>
               {answer}
             </label>
           </div>)

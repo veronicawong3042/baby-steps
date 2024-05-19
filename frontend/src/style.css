@@ -274,10 +274,10 @@
   transition: background-color 0.3s, border-color 0.3s;
   width: 200px;
 }
-.quiz-page .options-container .option input[type=radio]:checked + .option-label {
+.quiz-page .options-container .option input[type=radio]:checked + .option-label.wrongAnswer {
   background-color: rgba(232, 127, 127, 0.5);
 }
-.quiz-page .options-container .option input#option-3[type=radio]:checked + .option-label {
+.quiz-page .options-container .option input[type=radio]:checked + .option-label.correctAnswer {
   background-color: rgba(127, 232, 127, 0.5);
 }
 .quiz-page .correct-message {
