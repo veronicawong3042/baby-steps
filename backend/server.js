@@ -16,7 +16,7 @@ app.use(cors(corsOptions));
 const database = new sqlite3.Database("./db/database.sqlite");
 
 //create table for api
-database.run("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, question TEXT, answer TEXT)");
+database.run("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, question TEXT, answer TEXT, other1 TEXT, other2 TEXT, other3 TEXT)");
 
 //get is getting whatever data that already exists
 app.get('/questions', (req, res) => {
@@ -32,12 +32,10 @@ app.get('/questions', (req, res) => {
         }
     });
 });
+// database.run('INSERT INTO questions (question, answer, other1, other2, other3) VALUES ("What color is carrot?", "orange", "blue", "green", "red")');
+// database.run('INSERT INTO questions (question, answer, other1, other2, other3) VALUES ("Who is the prime minister of Canada?", "trudeau", "trump", "santa", "biden")');
 
-app.post('/questions', (req, res) => {
-    database.run('INSERT INTO questions (question, answer) VALUES ("Which of the following statements about ovulation and fertility tracking is correct?", "Tracking ovulation methods include basal body temperature charting, ovulation predictor kits, and monitoring cervical mucus changes.")');
-    database.run('INSERT INTO questions (question, answer) VALUES ("What are the initial signs and symptoms of pregnancy?", "Early signs and symptoms of pregnancy may include missed periods, breast tenderness, nausea (morning sickness), fatigue, frequent urination, and heightened sense of smell.")');
-    res.send("successfully added questions!");
-})
+
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

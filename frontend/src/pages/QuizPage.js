@@ -2,15 +2,26 @@ import { IoCloseSharp } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { useState } from "react";
+import {useQuestions} from '../hooks/useQuestions'
 
-function QuizPage() {
+function QuizPage(props) {
+  let title = props.title;
+  const questions = useQuestions();
+
+  const questionsLoaded = !!questions.length;
+
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
+  const currentQuestion = questions[currentQuestionIndex];
+  const currentQuestionText = currentQuestion?.question;
+  const currentQuestionAnswer = currentQuestion?.answer;
+  const allAnswers = [currentQuestion?.answer, currentQuestion?.other1, currentQuestion?.other2, currentQuestion?.other3].filter(Boolean);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const isCorrectAnswerSelected = selectedOption ===  `${allAnswers.indexOf(currentQuestionAnswer) + 1}`
 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
-    setShowErrorMessage(selectedValue !== "3"); 
   };
 
   return (
@@ -19,67 +30,30 @@ function QuizPage() {
         <NavLink to={`/`} className="close-button">
           <IoCloseSharp />
         </NavLink>
-        <h2>Question 1 of 3</h2>
+        <h2>Question {currentQuestionIndex + 1} of {questions.length}</h2>
       </div>
       <div className="quiz-content">
-        <blockquote>The fertile window is ________ before ovulation?</blockquote>
+        <blockquote>{currentQuestionText}</blockquote>
         <div className="options-container">
-          <div className="option">
+          {
+            allAnswers.map((answer, index) => <div key={answer} className="option">
             <input
               type="radio"
-              id="option-1"
+              id={"option-" + index + 1}
               name="quiz"
-              value="1"
+              value={index + 1}
               onChange={handleOptionChange}
               style={{ display: "none" }}
             />
-            <label htmlFor="option-1" className="option-label">
-              4 days
+            <label htmlFor={"option-" + index + 1} className="option-label">
+              {answer}
             </label>
-          </div>
-          <div className="option">
-            <input
-              type="radio"
-              id="option-2"
-              name="quiz"
-              value="2"
-              onChange={handleOptionChange}
-              style={{ display: "none" }}
-            />
-            <label htmlFor="option-2" className="option-label">
-              6 days
-            </label>
-          </div>
-          <div className="option">
-            <input
-              type="radio"
-              id="option-3"
-              name="quiz"
-              value="3"
-              onChange={handleOptionChange}
-              style={{ display: "none" }}
-            />
-            <label htmlFor="option-3" className="option-label">
-              5 days
-            </label>
-          </div>
-          <div className="option">
-            <input
-              type="radio"
-              id="option-4"
-              name="quiz"
-              value="4"
-              onChange={handleOptionChange}
-              style={{ display: "none" }}
-            />
-            <label htmlFor="option-4" className="option-label">
-              1 week
-            </label>
-          </div>
+          </div>)
+          }
         </div>
       </div>
 
-      {selectedOption === "3" && (
+      {isCorrectAnswerSelected && (
         <div className="next-page-btn correct-message">
           <p><em>Well Done!</em></p>
           <NavLink to={`/congrats`}>
@@ -88,7 +62,7 @@ function QuizPage() {
         </div>
       )}
 
-      {showErrorMessage && (
+      {!isCorrectAnswerSelected && (
         <div className="error-message">
           <p><em>Wrong answer, please try again.</em></p>
         </div>
