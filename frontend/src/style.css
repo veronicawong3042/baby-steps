@@ -14,6 +14,7 @@
   box-shadow: 0 0 0.5rem 0.5rem #BCD3FA;
   position: relative;
   z-index: 0;
+  animation: pulse 1.2s infinite alternate;
 }
 .lesson-component .icon-outer-circle .icon-inner-circle {
   border: solid black 0.2rem;
@@ -26,10 +27,18 @@
   margin-left: auto;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  100% {
+    transform: scale(1.1); /* Slightly larger size */
+  }
+}
 .lesson-popup {
   border: solid black 0.08rem;
   border-radius: 0.5rem;
-  margin: 0.2rem;
+  margin: 0.8rem 0;
   width: 12rem;
   font-weight: bold;
   padding: 0.8rem;
@@ -52,7 +61,7 @@
 .glossary-page h1 {
   text-align: center;
   font-size: 1.5rem;
-  background-color: #C2AFFC;
+  background-color: #BE95C4;
   margin: 0;
   padding: 1rem;
   margin-left: 0;
@@ -89,7 +98,7 @@
   padding-left: 1rem;
 }
 .glossary-page .chapter-two {
-  background: rgba(194, 175, 252, 0.3294117647);
+  background: #BE95C4;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -110,6 +119,7 @@
   box-shadow: 0 0 0.5rem 0.5rem #BCD3FA;
   position: relative;
   z-index: 0;
+  animation: pulse 1.2s infinite alternate;
 }
 .lesson-component .icon-outer-circle .icon-inner-circle {
   border: solid black 0.2rem;
@@ -122,10 +132,18 @@
   margin-left: auto;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  100% {
+    transform: scale(1.1); /* Slightly larger size */
+  }
+}
 .lesson-popup {
   border: solid black 0.08rem;
   border-radius: 0.5rem;
-  margin: 0.2rem;
+  margin: 0.8rem 0;
   width: 12rem;
   font-weight: bold;
   padding: 0.8rem;
@@ -189,7 +207,7 @@
 .chapter-nav-page h1 {
   text-align: center;
   font-size: 1.5rem;
-  background-color: #C2AFFC;
+  background-color: #BE95C4;
   margin: 0;
   padding: 1rem;
   margin-left: 0;
@@ -202,14 +220,8 @@
   padding-top: 1rem;
 }
 
-.quiz-page .close-button svg {
-  fill: black;
-  height: 2rem;
-  width: 2rem;
-  margin: 0.5rem;
-  position: absolute;
-  right: 0;
-  top: 0;
+.quiz-page {
+  margin: 1.5rem auto;
 }
 .quiz-page h2, .quiz-page blockquote, .quiz-page input, .quiz-page button {
   margin: 1rem 1.5rem;

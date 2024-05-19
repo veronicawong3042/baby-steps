@@ -1,8 +1,10 @@
+@import "../variables";
+
 .glossary-page {
     h1 {
         text-align: center;
         font-size: 1.5rem;
-        background-color: #C2AFFC;
+        background-color: $primary-color;
         margin: 0;
         padding: 1rem;
         margin-left: 0;
@@ -48,7 +50,7 @@
     }
 
     .chapter-two {
-        background: #c2affc54;
+        background: $primary-color;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }

@@ -1,8 +1,10 @@
+@import "../variables";
+
 .chapter-nav-page {
     h1 {
         text-align: center;
         font-size: 1.5rem;
-        background-color: #C2AFFC;
+        background-color: $primary-color;
         margin: 0;
         padding: 1rem;
         margin-left: 0;
