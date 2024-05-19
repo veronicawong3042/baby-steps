@@ -1,0 +1,24 @@
+.quiz-page {
+    .close-button svg {
+        fill: black;
+        height: 2rem;
+        width: 2rem;
+        margin: 0.5rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    h2, blockquote, input, button {
+        margin: 1rem 1.5rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    blockquote, label {
+        font-size: 14px;
+    }
+
+}
