@@ -4,8 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { useState } from "react";
 import {useQuestions} from '../hooks/useQuestions'
 
-function QuizPage(props) {
-  let title = props.title;
+function QuizPage() {
   const questions = useQuestions();
 
   const questionsLoaded = !!questions.length;
@@ -17,7 +16,7 @@ function QuizPage(props) {
   const currentQuestionAnswer = currentQuestion?.answer;
   const allAnswers = [currentQuestion?.answer, currentQuestion?.other1, currentQuestion?.other2, currentQuestion?.other3].filter(Boolean);
   const [selectedOption, setSelectedOption] = useState(null);
-  const isCorrectAnswerSelected = selectedOption ===  `${allAnswers.indexOf(currentQuestionAnswer) + 1}`
+  const isCorrectAnswerSelected = selectedOption ===  `${allAnswers.indexOf(currentQuestionAnswer) + 1}`;
 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
@@ -56,9 +55,16 @@ function QuizPage(props) {
       {isCorrectAnswerSelected && (
         <div className="next-page-btn correct-message">
           <p><em>Well Done!</em></p>
+          {(currentQuestionIndex+1 < questions.length)? 
+          <button className="test" onClick={()=>setCurrentQuestionIndex(currentQuestionIndex+1)}>
+            <FaArrowRight />
+          </button>
+          :
           <NavLink to={`/congrats`}>
             <FaArrowRight />
           </NavLink>
+          }
+          
         </div>
       )}
 

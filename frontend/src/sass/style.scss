@@ -25,22 +25,34 @@ body{
     text-align: right;
   }
   
-  .next-page-btn em {
-    font-style: italic;
-  }
-  
-  .next-page-btn a {
-    display: inline-block;
-    background-color: $dark-purple;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    margin-top: auto;
-  }
-  
-  .next-page-btn a:hover {
-    background-color: $dark-purple;
-  }
+.next-page-btn em {
+  font-style: italic;
+}
+
+.next-page-btn a {
+  display: inline-block;
+  background-color: $dark-purple;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto;
+}
+
+.next-page-btn button {
+  display: inline-block;
+  background-color: $dark-purple;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto;
+  border: none;
+}
+
+.next-page-btn a:hover {
+  background-color: $dark-purple;
+}
   

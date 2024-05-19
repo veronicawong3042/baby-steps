@@ -291,6 +291,9 @@
 .quiz-page .error-message {
   text-align: center;
 }
+.quiz-page .correct-answer {
+  background-color: rgb(162, 217, 162);
+}
 
 .congrats-page {
   position: fixed;
@@ -387,6 +390,18 @@ body {
   text-decoration: none;
   transition: background-color 0.3s;
   margin-top: auto;
+}
+
+.next-page-btn button {
+  display: inline-block;
+  background-color: #5E548E;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto;
+  border: none;
 }
 
 .next-page-btn a:hover {
