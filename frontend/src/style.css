@@ -212,17 +212,22 @@
 .chapter-nav-page h1 {
   text-align: center;
   font-size: 1.5rem;
-  background-color: #5E548E;
-  padding: 1.5rem;
-  margin: 0; /* Remove margin */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  color: #5E548E;
+  border-bottom: 2px solid black;
 }
 .chapter-nav-page h2 {
   font-size: 15px;
   border-bottom: 2px solid black;
-  margin: 2rem 0; /* Adjust top and bottom margin, and center horizontally */
+  margin: 0; /* Adjust top and bottom margin, and center horizontally */
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 5rem;
   max-width: 100%; /* Limit maximum width to prevent horizontal scrolling */
+}
+.chapter-nav-page .even {
+  background-color: rgba(190, 149, 196, 0.3);
 }
 
 .quiz-page {
