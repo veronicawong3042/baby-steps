@@ -5,9 +5,12 @@ import { useState } from "react";
 
 function QuizPage() {
   const [selectedOption, setSelectedOption] = useState(null);
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
 
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    const selectedValue = event.target.value;
+    setSelectedOption(selectedValue);
+    setShowErrorMessage(selectedValue !== "3"); // Show error message if not the correct answer
   };
 
   return (
@@ -76,12 +79,20 @@ function QuizPage() {
         </div>
       </div>
 
-      {/* Next Question Button ideally ONLY SHOWS AFTER AN ANSWER HAS BEEN GIVEN */}
-      <div className="next-page-btn">
-        <NavLink to={`/`}>
-          <FaArrowRight />
-        </NavLink>
-      </div>
+      {selectedOption === "3" && (
+        <div className="next-page-btn correct-message">
+          <p><em>Well Done!</em></p>
+          <NavLink to={`/`}>
+            <FaArrowRight />
+          </NavLink>
+        </div>
+      )}
+
+      {showErrorMessage && (
+        <div className="error-message">
+          <p><em>Wrong answer, please try again.</em></p>
+        </div>
+      )}
     </div>
   );
 }

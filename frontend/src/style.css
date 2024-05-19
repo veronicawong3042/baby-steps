@@ -222,10 +222,13 @@
 }
 
 .quiz-page {
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   padding: 1.5rem;
 }
-.quiz-page h2, .quiz-page blockquote, .quiz-page input, .quiz-page button {
+.quiz-page h2,
+.quiz-page blockquote,
+.quiz-page input,
+.quiz-page button {
   margin: 1rem 1.5rem;
 }
 .quiz-page blockquote {
@@ -235,6 +238,7 @@
 }
 .quiz-page h2 {
   font-size: 20px;
+  text-align: center;
 }
 .quiz-page label {
   font-size: 14px;
@@ -266,6 +270,17 @@
 }
 .quiz-page .options-container .option input#option-3[type=radio]:checked + .option-label {
   background-color: rgba(127, 232, 127, 0.5);
+}
+.quiz-page .correct-message {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.quiz-page .correct-message p {
+  margin-right: 1rem;
+}
+.quiz-page .error-message {
+  text-align: center;
 }
 
 .education-page {
@@ -338,7 +353,7 @@ body {
 }
 
 .next-page-btn a:hover {
-  background-color: #4b0082;
+  background-color: #5E548E;
 }
 
 /*# sourceMappingURL=style.css.map */
