@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+
 function EducationPage() {
   return (
     <div className="education-page">
@@ -23,11 +26,13 @@ function EducationPage() {
         <li>Knowing these signs helps time intercourse for conception.</li>
       </ul>
 
-      <div>
+      <div className="next-page-btn">
         <p>
           <em>There will be a quiz next page</em>
-          
         </p>
+        <NavLink to={`/quiz`}>
+          <FaArrowRight />
+        </NavLink>
       </div>
     </div>
   );
