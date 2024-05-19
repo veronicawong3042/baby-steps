@@ -1,28 +1,26 @@
 .chapter-nav-page {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+
     h1 {
         text-align: center;
         font-size: 1.5rem;
-        background-color: #C2AFFC;
-        margin: 0;
-        padding: 1rem;
-        margin-left: 0;
+        background-color: $dark-purple;
+        padding: 1.5rem;
+        margin: 0; /* Remove margin */
     }
 
     h2 {
         font-size: 15px;
         border-bottom: 2px solid black;
-        margin: 1rem 1.5rem;
-        padding-bottom: 2rem;
-        padding-top: 1rem;
+        margin: 2rem 0; /* Adjust top and bottom margin, and center horizontally */
+        text-align: center;
+        padding-top: 3rem;
+        max-width: 100%; /* Limit maximum width to prevent horizontal scrolling */
     }
 
-    .close-button svg {
-        fill: black;
-        height: 2rem;
-        width: 2rem;
-        margin: 0.5rem;
-        position: absolute;
-        right: 0;
-        top: 0;
+    .even {
+        background-color: $primary-color;
     }
+
 }
