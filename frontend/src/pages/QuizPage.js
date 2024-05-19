@@ -19,10 +19,9 @@ function QuizPage() {
         <h2>Question 1 of 3</h2>
       </div>
       <div className="quiz-content">
-        {/* Blockquote is the question */}
-        <blockquote>Why are we doing this hackathon?</blockquote>
+        <blockquote>The fertile window is ________ before ovulation?</blockquote>
         <div className="options-container">
-        <div className="option">
+          <div className="option">
             <input
               type="radio"
               id="option-1"
@@ -31,7 +30,9 @@ function QuizPage() {
               onChange={handleOptionChange}
               style={{ display: "none" }}
             />
-            <label htmlFor="option-1" className="option-label">Answer 1</label>
+            <label htmlFor="option-1" className="option-label">
+              4 days
+            </label>
           </div>
           <div className="option">
             <input
@@ -42,7 +43,9 @@ function QuizPage() {
               onChange={handleOptionChange}
               style={{ display: "none" }}
             />
-            <label htmlFor="option-2" className="option-label">Answer 2</label>
+            <label htmlFor="option-2" className="option-label">
+              6 days
+            </label>
           </div>
           <div className="option">
             <input
@@ -53,7 +56,9 @@ function QuizPage() {
               onChange={handleOptionChange}
               style={{ display: "none" }}
             />
-            <label htmlFor="option-3" className="option-label">Answer 3</label>
+            <label htmlFor="option-3" className="option-label">
+              5 days
+            </label>
           </div>
           <div className="option">
             <input
@@ -64,14 +69,18 @@ function QuizPage() {
               onChange={handleOptionChange}
               style={{ display: "none" }}
             />
-            <label htmlFor="option-4" className="option-label">Answer 4</label>
+            <label htmlFor="option-4" className="option-label">
+              1 week
+            </label>
           </div>
         </div>
       </div>
 
-      {/* Next Question Button ONLY SHOWS AFTER AN ANSWER HAS BEEN GIVEN */}
+      {/* Next Question Button ideally ONLY SHOWS AFTER AN ANSWER HAS BEEN GIVEN */}
       <div className="next-page-btn">
-      <NavLink><FaArrowRight /></NavLink>
+        <NavLink to={`/`}>
+          <FaArrowRight />
+        </NavLink>
       </div>
     </div>
   );

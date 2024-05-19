@@ -1,7 +1,8 @@
 @import '../variables';
+
 .education-page {
-    //margin: 20px;
-    padding: 20px;
+    margin: 1rem auto;
+    padding: 1.5rem;
 
     h2 {
         font-size: 24px;
@@ -10,8 +11,9 @@
         text-align: center;
     }
     .learningObjective {
-        margin: auto;
+        margin: 2.5rem auto 1.5rem;
         align-content: center;
+        border-radius: .3rem;
         width: 10rem; // Set width to form a square
         height: 1rem; // Set height to form a square
         background-color: $primary-color; // Set background color
@@ -23,5 +25,11 @@
             //color: $light-purple;
             font-weight: 600;
         }
+    }
+
+    .next-page-btn{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 3rem auto 2rem;
     }
 }

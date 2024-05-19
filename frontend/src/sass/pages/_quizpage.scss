@@ -1,8 +1,8 @@
 // @use '../variables';
 
 .quiz-page {
-  margin: 1.5rem auto;
-
+  margin: 2rem auto;
+  padding: 1.5rem;
 
     h2, blockquote, input, button {
         margin: 1rem 1.5rem;
@@ -26,7 +26,7 @@
         margin: 1rem;
         background-color: #eee5f0;
         border-radius: 1rem;
-        padding: 0.5rem;
+        // padding: 0.5rem;
     }
 
     .options-container {
@@ -41,13 +41,18 @@
             display: block;
             padding: 1.5rem;
             border-radius: 10px;
+            font-weight: bold;
             cursor: pointer;
             transition: background-color 0.3s, border-color 0.3s;
             width: 200px;
           }
   
           input[type="radio"]:checked + .option-label {
-            background-color: rgb(232, 127, 127);
+            background-color: rgba(232, 127, 127, 0.5);
+          }
+
+          input#option-3[type="radio"]:checked + .option-label {
+            background-color: rgb(127, 232, 127, 0.5); // Green color for correct answer
           }
         }
       }

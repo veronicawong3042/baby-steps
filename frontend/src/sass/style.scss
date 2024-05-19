@@ -31,12 +31,13 @@ body{
   
   .next-page-btn a {
     display: inline-block;
-    background-color: #5E548E;
+    background-color: $dark-purple;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
+    margin-top: auto;
   }
   
   .next-page-btn a:hover {
