@@ -9,9 +9,9 @@ function EducationPage() {
       <NavLink to={`/`} className="close-button">
         <IoCloseSharp />
       </NavLink>
-      <strong>
+      <div className="learningObjective">
         <p>Learning Objective</p>
-      </strong>
+      </div>
       <p>
         To provide a clear understanding of the menstrual cycle and ovulation.
       </p>
