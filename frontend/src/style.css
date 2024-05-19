@@ -53,15 +53,30 @@
 .homepage {
   margin: auto 1rem;
 }
+.homepage svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .homepage .chapter-banner {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
 }
-.homepage .chapter-banner .change-chapter-btn svg {
-  width: 1.5rem;
-  height: 1.5rem;
+.homepage .lesson-component {
+  width: 100%;
+}
+.homepage .lesson-component:nth-child(even) {
+  margin-left: auto;
+}
+.homepage .lesson-component svg {
+  margin: 1.5rem;
+}
+.homepage .glossary-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1.5rem;
 }
 
 .chapter-nav-page h1 {

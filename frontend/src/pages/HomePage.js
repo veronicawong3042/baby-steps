@@ -16,12 +16,13 @@ function HomePage() {
         </NavLink>
       </div>
 
-      {/* to be cloned/reused: */}
-      <LessonComponent lessonTitle="Lesson 1 - Menstrual Cycle and Ovulation" />
-      <LessonComponent lessonTitle="Lesson 2 - Fertility tracking methods" />
-      <LessonComponent lessonTitle="Lesson 3 - Common fertility issues" />
+      <div className="chapter-lessons">
+        <LessonComponent lessonTitle="Lesson 1 - Menstrual Cycle and Ovulation" />
+        <LessonComponent lessonTitle="Lesson 2 - Fertility tracking methods" />
+        <LessonComponent lessonTitle="Lesson 3 - Common fertility issues" />
+      </div>
 
-      <NavLink to={`/glossary`} className="glossary-btn" >
+      <NavLink to={`/glossary`} className="glossary-btn">
         <HiOutlineInformationCircle />
       </NavLink>
     </div>
