@@ -6,9 +6,10 @@ body, p, a {
     color: black;
     text-decoration: none;
     font-size: 14px;
+}
+body{
     background-color: $light-purple;
 }
-
 .close-button svg {
     fill: black;
     height: 2rem;
