@@ -16,8 +16,8 @@ function HomePage() {
 
       {/* to be cloned/reused: */}
       <LessonComponent lessonTitle="Lesson 1 - Menstrual Cycle and Ovulation" />
-      <LessonComponent lessonTitle="Lesson 2" />
-      <LessonComponent lessonTitle="Lesson 3" />
+      <LessonComponent lessonTitle="Lesson 2 - Fertility tracking methods" />
+      <LessonComponent lessonTitle="Lesson 3 - Common fertility issues" />
 
       <NavLink to={`/glossary`} className="glossary-btn" >
         <HiOutlineInformationCircle />
