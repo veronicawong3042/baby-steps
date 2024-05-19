@@ -1,0 +1,12 @@
+.lesson-popup{
+    border: solid black .08rem;
+    margin: .2rem;
+    width: clamp(8rem, 12rem, 16rem);
+    max-width: 100vw;
+
+    padding: .4rem;
+    background-color: white;
+
+    position: absolute;
+    z-index: 999;
+}
