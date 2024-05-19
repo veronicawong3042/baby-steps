@@ -1,3 +1,42 @@
+body, p, a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.close-button svg {
+  fill: black;
+  height: 2rem;
+  width: 2rem;
+  margin: 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.next-page-btn {
+  margin: 20px;
+  text-align: right;
+}
+
+.next-page-btn em {
+  font-style: italic;
+}
+
+.next-page-btn a {
+  display: inline-block;
+  background-color: #5E548E;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.next-page-btn a:hover {
+  background-color: #4b0082;
+}
+
 .lesson-popup {
   border: solid black 0.08rem;
   margin: 0.2rem;
@@ -110,17 +149,55 @@
 .quiz-page h2, .quiz-page blockquote, .quiz-page input, .quiz-page button {
   margin: 1rem 1.5rem;
 }
+.quiz-page blockquote {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
 .quiz-page h2 {
   font-size: 20px;
 }
-.quiz-page blockquote, .quiz-page label {
+.quiz-page label {
   font-size: 14px;
 }
+.quiz-page .option {
+  margin: 1rem;
+  background-color: #FAF3F7;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.quiz-page .options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quiz-page .options-container .option {
+  margin: 0.5rem 0;
+}
+.quiz-page .options-container .option .option-label {
+  display: block;
+  padding: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  width: 200px;
+}
+.quiz-page .options-container .option input[type=radio]:checked + .option-label {
+  background-color: rgb(232, 127, 127);
+}
 
-body, p, a {
-  color: black;
-  text-decoration: none;
-  font-size: 11px;
+.education-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.education-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--accent);
 }
 
 /*# sourceMappingURL=style.css.map */
