@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // ------------------------ //
 import HomePage from "../pages/HomePage";
 import GlossaryPage from "../pages/GlossaryPage";
+import QuestionsTestPage from "../pages/QuestionsTestPage";
 
 function AppRouter() {
     return (
@@ -11,6 +12,7 @@ function AppRouter() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/glossary-page" element={<GlossaryPage />} />
+            <Route path="/questions-test-page" element={<QuestionsTestPage />} />
           </Routes>
         {/* </GlobalProvider> */}
       </BrowserRouter>
