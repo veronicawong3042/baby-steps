@@ -1,3 +1,15 @@
 .homepage {
-    
+    margin: auto 1rem;
+
+    .chapter-banner{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .change-chapter-btn svg{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
 }

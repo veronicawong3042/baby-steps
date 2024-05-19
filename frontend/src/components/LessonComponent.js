@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import LessonPopUp from "../components/LessonPopUp";
+import { FaStar } from "react-icons/fa";
+
 
 function LessonComponent({ lessonTitle }) {
   const [showPopup, setShowPopup] = useState(false);
@@ -10,7 +12,8 @@ function LessonComponent({ lessonTitle }) {
 
   return (
     <div className='lesson-component' onClick={handleLessonClick}>
-      {lessonTitle}
+      <FaStar />
+      {/* {lessonTitle} */}
       {showPopup && <LessonPopUp lessonTitle={lessonTitle} />}
     </div>
   );
