@@ -1,4 +1,4 @@
-# StormHacks 2024
+# StormHacks 2024: Baby Steps
 ## By: Emily, Joar, Linda, Veronica
 
 ## Inspiration
