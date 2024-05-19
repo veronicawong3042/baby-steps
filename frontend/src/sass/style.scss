@@ -1,3 +1,7 @@
+@import './components/components';
+@import './pages/pages';
+@import 'variables';
+
 body, p, a {
     color: black;
     text-decoration: none;
@@ -37,6 +41,3 @@ body, p, a {
     background-color: #4b0082;
   }
   
-    @import './components/components';
-    @import './pages/pages';
-    @import 'variables';
