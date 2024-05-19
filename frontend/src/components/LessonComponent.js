@@ -8,16 +8,13 @@ function LessonComponent({ lessonTitle }) {
 
   const handleLessonClick = () => {
     setShowPopup(true);
-    // Add event listener to close popup when clicking outside of it
     document.addEventListener("click", handleClickOutside);
   };
 
   const handleClickOutside = (event) => {
     const lessonComponent = document.querySelector(".lesson-component");
-    // Close the popup if clicked outside of it
     if (lessonComponent && !lessonComponent.contains(event.target)) {
       setShowPopup(false);
-      // Remove the event listener after closing the popup
       document.removeEventListener("click", handleClickOutside);
     }
   };
