@@ -12,12 +12,13 @@
   }
 
 .icon-outer-circle{
-    border: solid $primary-color 0.15rem;
+    border: solid $primary-color 0.2rem;
     width: fit-content;
     height: fit-content;
     border-radius: 50%;
-    padding: .2rem;
+    padding: .4rem;
     box-shadow: 0 0 .5rem .5rem $accent-color;
+    // background-color: white;
 
     position: relative;
     z-index: 0;
@@ -31,7 +32,7 @@
     }
 }
 
-  //   &:nth-child(even) {
-  //     margin-left: auto;
-  //   }
+    &:nth-child(even) {
+      margin-left: auto;
+    }
 }
