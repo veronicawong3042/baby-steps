@@ -112,14 +112,27 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: var(--secondary);
+  background-color: #FAF3F7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .education-page h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: dark-purple;
+  color: #5E548E;
+  text-align: center;
+}
+.education-page .learningObjective {
+  margin: auto;
+  align-content: center;
+  width: 10rem;
+  height: 1rem;
+  background-color: #BE95C4;
+  padding: 10px;
+  text-align: center;
+}
+.education-page .learningObjective p {
+  font-weight: 600;
 }
 
 body, p, a {
