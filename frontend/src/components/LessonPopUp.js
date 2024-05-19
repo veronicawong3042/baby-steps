@@ -5,7 +5,7 @@ function LessonPopUp({ lessonTitle }) {
   return (
     <div className='lesson-popup'>
       <p>{lessonTitle} Lesson Popup</p>
-      <NavLink to={`/education-page`}>
+      <NavLink to={`/education`}>
         Start Lesson
       </NavLink>
     </div>
