@@ -1,9 +1,36 @@
-.lesson-popup{
-    border: solid black .08rem;
-    margin: .2rem;
-    width: clamp(8rem, 12rem, 16rem);
-    padding: .4rem;
+@import "../variables";
 
+
+.lesson-component {
+  width: fit-content;
+  margin: 5.5rem 0;
+//   position: relative;
+//   z-index: 0;
+
+  svg {
+    margin: .5rem;
+  }
+
+.icon-outer-circle{
+    border: solid $primary-color 0.15rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    padding: .2rem;
+    box-shadow: 0 0 .5rem .5rem $accent-color;
     
+    position: relative;
+    z-index: 0;
 
+    .icon-inner-circle {
+      border: solid black 0.2rem;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 50%;
+    }
+}
+
+  //   &:nth-child(even) {
+  //     margin-left: auto;
+  //   }
 }
