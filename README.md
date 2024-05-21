@@ -16,7 +16,7 @@ We had difficulty setting up the database which led to troubles when getting the
 ## Accomplishments that we're proud of
 We are all juniors in coding with three of us only within our first year of learning how to code at all so we are very proud of our accomplishment overall.
 
-The back-ends are proud of the seamless integration between the front-end and back-end especially because of the struggles we had with it. We're proud of the scalability brought on by using SQLite. For front-end, we're proud of the Figma design and favicon.
+The back-ends are proud of the seamless integration between the front-end and back-end especially because of the struggles we had with it. We're proud of the scalability brought on by using SQLite. For front-end, we're proud of the <a href="https://www.figma.com/design/UI8NCCJGvWMgdOlvIVpeCZ/StormHacks-2024?node-id=0%3A1&t=llUb7Mte337gheQk-1">Figma design</a> and favicon.
 
 ## What we learned
 We learned how to create a dynamic custom hook, gained a stronger understanding of react router dom, as well as implementing the basics of SQL in conjunction with Express.js. We also deployed our app with Defang.
