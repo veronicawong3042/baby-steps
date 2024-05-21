@@ -11,24 +11,24 @@ function ChapterNavPage () {
             <h1>Table of Contents</h1>
             <div className="chapterList">
                 <NavLink to={`/`}>
-                    <h2>Chapter 1: Preconception and Planning</h2>
+                    <h2>Chapter 1:<br></br> Preconception and Planning</h2>
                 </NavLink>
                 <NavLink to={`/`}>
-                    <h2 className="even">Chapter 2: Early Pregnancy</h2>
+                    <h2 className="even">Chapter 2:<br></br> Early Pregnancy</h2>
                 </NavLink>
                 <NavLink to={`/`}>
                     <h2>
-                        Chapter 3: Second Trimester
+                        Chapter 3:<br></br> Second Trimester
                     </h2>
                 </NavLink>
                 <NavLink to={`/`}>
-                    <h2 className="even">Chapter 4: Third Trimester</h2>
+                    <h2 className="even">Chapter 4:<br></br> Third Trimester</h2>
                 </NavLink>
                 <NavLink to={`/`}>
-                    <h2>Chapter 5: Postpartum Care</h2>
+                    <h2>Chapter 5:<br></br> Postpartum Care</h2>
                 </NavLink>
                 <NavLink to={`/`}>
-                    <h2 className="even">Chapter 6: Nutrition and Wellness</h2>
+                    <h2 className="even">Chapter 6:<br></br> Nutrition and Wellness</h2>
                 </NavLink>
             </div>
         </div>
