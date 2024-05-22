@@ -1,5 +1,6 @@
 version: '3.9'
 services:
+  
   backend:
     restart: unless-stopped
     build:
@@ -16,6 +17,7 @@ services:
       test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/questions"]
 
   frontend:
+    domainname: learn.babysteps.study
     restart: unless-stopped
     build:
       context: frontend

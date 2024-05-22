@@ -1,4 +1,21 @@
-# StormHacks 2024
-## By: Emily, Joar, Linda, Veronica
+## Build
+```
+go mod download
+make
+```
 
-Our StormHacks project is an course app designed towards providing accessible and interactive course modules about family planning/pregnancy.
+## Run
+```
+./defang
+```
+
+## Format Code
+```
+go fmt
+```
+
+## Update Dependencies
+To regenerate the `go.mod` file:
+```
+go mod tidy
+```
