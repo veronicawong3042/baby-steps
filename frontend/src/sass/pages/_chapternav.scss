@@ -1,8 +1,8 @@
 @import "../variables";
 
 .chapter-nav-page {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0; 
 
     h1 {
         text-align: center;
@@ -16,12 +16,12 @@
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 1.1rem;
         border-bottom: 2px solid black;
-        margin: 0; /* Adjust top and bottom margin, and center horizontally */
+        margin: 0; 
         text-align: center;
-        padding-top: 5rem;
-        max-width: 100%; /* Limit maximum width to prevent horizontal scrolling */
+        padding: 2rem;
+        max-width: 100%; 
         
     }
     .even {

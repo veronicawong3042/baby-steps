@@ -11,7 +11,7 @@ function EducationPage() {
           <IoCloseSharp />
         </NavLink>
         <div className="learningObjective">
-          <p>Learning Objective</p>
+          <h3>Learning Objective</h3>
         </div>
         <p>
           To provide a clear understanding of the menstrual cycle and ovulation.

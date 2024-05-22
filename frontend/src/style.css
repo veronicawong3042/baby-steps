@@ -206,8 +206,8 @@
 }
 
 .chapter-nav-page {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
 }
 .chapter-nav-page h1 {
   text-align: center;
@@ -219,12 +219,12 @@
   border-bottom: 2px solid black;
 }
 .chapter-nav-page h2 {
-  font-size: 15px;
+  font-size: 1.1rem;
   border-bottom: 2px solid black;
-  margin: 0; /* Adjust top and bottom margin, and center horizontally */
+  margin: 0;
   text-align: center;
-  padding-top: 5rem;
-  max-width: 100%; /* Limit maximum width to prevent horizontal scrolling */
+  padding: 2rem;
+  max-width: 100%;
 }
 .chapter-nav-page .even {
   background-color: rgba(190, 149, 196, 0.3);
@@ -274,10 +274,7 @@
   transition: background-color 0.3s, border-color 0.3s;
   width: 200px;
 }
-.quiz-page .options-container .option input[type=radio]:checked + .option-label.wrongAnswer {
-  background-color: rgba(232, 127, 127, 0.5);
-}
-.quiz-page .options-container .option input[type=radio]:checked + .option-label.correctAnswer {
+.quiz-page .options-container .option input#option-3[type=radio]:checked + .option-label {
   background-color: rgba(127, 232, 127, 0.5);
 }
 .quiz-page .correct-message {
@@ -290,9 +287,6 @@
 }
 .quiz-page .error-message {
   text-align: center;
-}
-.quiz-page .correct-answer {
-  background-color: rgb(162, 217, 162);
 }
 
 .congrats-page {
@@ -333,12 +327,16 @@
   color: #5E548E;
   text-align: center;
 }
+.education-page h3 {
+  margin: 0;
+  padding: 0.1rem 0.5rem;
+}
 .education-page .learningObjective {
   margin: 2.5rem auto 1.5rem;
   align-content: center;
   border-radius: 0.3rem;
-  width: 10rem;
-  height: 1rem;
+  width: fit-content;
+  height: fit-content;
   background-color: #BE95C4;
   padding: 10px;
   text-align: center;
